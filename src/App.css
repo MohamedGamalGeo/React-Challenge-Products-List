@@ -1,0 +1,160 @@
+.App {
+  width: 90%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;         
+}
+
+h1, h3 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Products Table Page Styles */
+.products-table {
+  width: 90%;
+  
+  background-color: #fff;
+  padding: 20px;
+  
+  border-radius: 5px;
+  text-align: center;
+}
+
+.products-table thead {
+  background-color: #f4f4f4;
+}
+
+.products-table th,
+.products-table td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.products-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.products-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.products-table td {
+  vertical-align: middle;
+}
+
+.products-table td a,
+.products-table td button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.products-table td a:hover,
+.products-table td button:hover {
+  text-decoration: underline;
+}
+
+.products-table td button {
+  color: #0f0f0f; /* Delete button styled in red */
+  font-weight: bold;
+}
+
+/* Add Product Link */
+.add-product-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-product-link:hover {
+  text-decoration: underline;
+}
+
+/* Show Page Styles */
+.show-product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.show-product h3 {
+  margin: 10px 0;
+  color: #555;
+}
+
+.show-product h3 span {
+  font-weight: normal;
+  color: #666;
+}
+
+.show-product a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.show-product a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons for navigation (Show page links) */
+.show-product .nav-links a {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.show-product .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .products-table {
+    font-size: 14px;
+  }
+
+  .products-table th, .products-table td {
+    padding: 8px;
+  }
+
+  .show-product {
+    padding: 15px;
+  }
+
+  .add-product-link {
+    font-size: 14px;
+  }
+}
